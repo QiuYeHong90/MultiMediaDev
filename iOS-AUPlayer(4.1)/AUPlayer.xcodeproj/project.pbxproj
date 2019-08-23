@@ -16,11 +16,11 @@
 		18E9F5FD1E4C781300853E4E /* AUPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9F5FC1E4C781300853E4E /* AUPlayerUITests.m */; };
 		18E9F60B1E4C78BE00853E4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E9F60A1E4C78BE00853E4E /* ViewController.xib */; };
 		18E9F6111E4C7BF600853E4E /* MiAmor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18E9F60D1E4C7BF600853E4E /* MiAmor.mp3 */; };
-		18E9F6121E4C7BF600853E4E /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9F6101E4C7BF600853E4E /* CommonUtil.m */; };
 		18E9F6151E4C845A00853E4E /* AUGraphPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9F6141E4C845A00853E4E /* AUGraphPlayer.m */; };
 		18E9F6281E4C8FB600853E4E /* AVAudioSession+RouteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9F6251E4C8FB600853E4E /* AVAudioSession+RouteUtils.m */; };
 		18E9F6291E4C8FB600853E4E /* ELAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E9F6271E4C8FB600853E4E /* ELAudioSession.m */; };
 		3408774E1F71711100A48BC9 /* 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3408774D1F71711100A48BC9 /* 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a */; };
+		38952098230F8774007C79B8 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 38952096230F8774007C79B8 /* CommonUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +58,6 @@
 		18E9F5FE1E4C781300853E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E9F60A1E4C78BE00853E4E /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		18E9F60D1E4C7BF600853E4E /* MiAmor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MiAmor.mp3; sourceTree = "<group>"; };
-		18E9F60F1E4C7BF600853E4E /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
-		18E9F6101E4C7BF600853E4E /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
 		18E9F6131E4C845A00853E4E /* AUGraphPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUGraphPlayer.h; sourceTree = "<group>"; };
 		18E9F6141E4C845A00853E4E /* AUGraphPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUGraphPlayer.m; sourceTree = "<group>"; };
 		18E9F6241E4C8FB600853E4E /* AVAudioSession+RouteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+RouteUtils.h"; sourceTree = "<group>"; };
@@ -67,6 +65,8 @@
 		18E9F6261E4C8FB600853E4E /* ELAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELAudioSession.h; sourceTree = "<group>"; };
 		18E9F6271E4C8FB600853E4E /* ELAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELAudioSession.m; sourceTree = "<group>"; };
 		3408774D1F71711100A48BC9 /* 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0fe2a7e9c51012210eaaa1e2b103b1b1.m4a; sourceTree = "<group>"; };
+		38952096230F8774007C79B8 /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
+		38952097230F8774007C79B8 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +117,10 @@
 		18E9F5D61E4C781100853E4E /* AUPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				38952092230F8744007C79B8 /* utils */,
 				18E9F62A1E4D7A2400853E4E /* AudioSession */,
 				18E9F6231E4C8F6700853E4E /* AUPlayer */,
 				18E9F60C1E4C7BF600853E4E /* resource */,
-				18E9F60E1E4C7BF600853E4E /* utils */,
 				18E9F5DA1E4C781100853E4E /* AppDelegate.h */,
 				18E9F5DB1E4C781100853E4E /* AppDelegate.m */,
 				18E9F5DD1E4C781200853E4E /* ViewController.h */,
@@ -169,15 +169,6 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
-		18E9F60E1E4C7BF600853E4E /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				18E9F60F1E4C7BF600853E4E /* CommonUtil.h */,
-				18E9F6101E4C7BF600853E4E /* CommonUtil.m */,
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
 		18E9F6231E4C8F6700853E4E /* AUPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +187,15 @@
 				18E9F6271E4C8FB600853E4E /* ELAudioSession.m */,
 			);
 			name = AudioSession;
+			sourceTree = "<group>";
+		};
+		38952092230F8744007C79B8 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				38952097230F8774007C79B8 /* CommonUtil.h */,
+				38952096230F8774007C79B8 /* CommonUtil.m */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,18 +265,18 @@
 				TargetAttributes = {
 					18E9F5D31E4C781100853E4E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = GLWCRSS83U;
+						DevelopmentTeam = Q93SMJ6GTP;
 						ProvisioningStyle = Automatic;
 					};
 					18E9F5EC1E4C781300853E4E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MY5GTD35UJ;
+						DevelopmentTeam = Q93SMJ6GTP;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 18E9F5D31E4C781100853E4E;
 					};
 					18E9F5F71E4C781300853E4E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = MY5GTD35UJ;
+						DevelopmentTeam = Q93SMJ6GTP;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 18E9F5D31E4C781100853E4E;
 					};
@@ -287,6 +287,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -338,7 +339,7 @@
 			files = (
 				18E9F5DF1E4C781200853E4E /* ViewController.m in Sources */,
 				18E9F5DC1E4C781100853E4E /* AppDelegate.m in Sources */,
-				18E9F6121E4C7BF600853E4E /* CommonUtil.m in Sources */,
+				38952098230F8774007C79B8 /* CommonUtil.m in Sources */,
 				18E9F5D91E4C781100853E4E /* main.m in Sources */,
 				18E9F6281E4C8FB600853E4E /* AVAudioSession+RouteUtils.m in Sources */,
 				18E9F6151E4C845A00853E4E /* AUGraphPlayer.m in Sources */,
@@ -481,11 +482,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GLWCRSS83U;
+				DEVELOPMENT_TEAM = Q93SMJ6GTP;
 				INFOPLIST_FILE = AUPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.Lynx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhp.Lynx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -494,11 +495,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GLWCRSS83U;
+				DEVELOPMENT_TEAM = Q93SMJ6GTP;
 				INFOPLIST_FILE = AUPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ubtechinc.Lynx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhp.Lynx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -507,7 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = MY5GTD35UJ;
+				DEVELOPMENT_TEAM = Q93SMJ6GTP;
 				INFOPLIST_FILE = AUPlayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phuket.tour.audio.player.AUPlayerTests;
@@ -520,7 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = MY5GTD35UJ;
+				DEVELOPMENT_TEAM = Q93SMJ6GTP;
 				INFOPLIST_FILE = AUPlayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phuket.tour.audio.player.AUPlayerTests;
@@ -532,7 +533,7 @@
 		18E9F6081E4C781300853E4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = MY5GTD35UJ;
+				DEVELOPMENT_TEAM = Q93SMJ6GTP;
 				INFOPLIST_FILE = AUPlayerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phuket.tour.audio.player.AUPlayerUITests;
@@ -544,7 +545,7 @@
 		18E9F6091E4C781300853E4E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = MY5GTD35UJ;
+				DEVELOPMENT_TEAM = Q93SMJ6GTP;
 				INFOPLIST_FILE = AUPlayerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phuket.tour.audio.player.AUPlayerUITests;
